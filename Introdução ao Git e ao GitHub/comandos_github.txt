@@ -1,0 +1,74 @@
+Lista de comandos que foram utilizados para o desafio.
+
+Iniciando o git
+================
+Git init
+
+Adicionando conteúdo para ser monitorado
+========================================
+git add *
+
+Comitando atualizações
+======================
+git commit -m "Inclusão das anotaç~eos do curso de Git/GitHub"
+
+Listando configurações do git
+=============================
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=weltonrosa
+user.email=weltonrosa@gmail.com
+core.editor="C:\Users\welto\AppData\Local\Programs\Microsoft VS Code Insiders\bin\code-insiders" --wait
+core.repositoryformatversion=0
+:
+<precione a tecla q para sair>
+
+Adicionando uma origem
+=======================
+git remote add origin https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git
+
+Checando endereço remoto
+========================
+$ git remote -v
+origin  https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git (fetch)
+origin  https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git (push)
+
+Verificando status
+==================
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Subindo atualizações
+====================
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 491 bytes | 163.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git
+   a6135bf..c0250bb  main -> main
+
+
