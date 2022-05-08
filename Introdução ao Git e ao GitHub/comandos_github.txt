@@ -1,16 +1,8 @@
 Lista de comandos que foram utilizados para o desafio.
+=======================================================
 
-Iniciando o git
-================
-Git init
-
-Adicionando conteúdo para ser monitorado
-========================================
-git add *
-
-Comitando atualizações
-======================
-git commit -m "Inclusão das anotaç~eos do curso de Git/GitHub"
+Configurando o Git
+==================
 
 Listando configurações do git
 =============================
@@ -50,8 +42,40 @@ $ git remote -v
 origin  https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git (fetch)
 origin  https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git (push)
 
-Verificando status
+
+
+
+Utilizando o Git
+================
+
+Iniciando o git
+================
+Git init
+
+Adicionando conteúdo para ser monitorado
+========================================
+git add .
+
+Verificando Status
 ==================
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   comandos_github.txt
+
+
+Comitando atualizações
+======================
+$ git commit -m "Inclusão do arquivo comandos_github.txt"
+[main 80c21b0] Inclusão do arquivo comandos_github.txt
+ 1 file changed, 74 insertions(+)
+ create mode 100644 "Introdu\303\247\303\243o ao Git e ao GitHub/comandos_github.txt"
+
+Verificando Status novamente
+============================
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -59,16 +83,14 @@ Your branch is ahead of 'origin/main' by 1 commit.
 
 nothing to commit, working tree clean
 
-Subindo atualizações
-====================
+Realizando o push das alterações
+================================
 $ git push origin main
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 491 bytes | 163.00 KiB/s, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.34 KiB | 344.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/weltonrosa/dio-desafio-github-primeiro-repositorio.git
-   a6135bf..c0250bb  main -> main
-
-
+   c0250bb..80c21b0  main -> main
